@@ -1,8 +1,21 @@
 import React from 'react';
 import { Container, Line, LoginCont, ContainerBottom,
-        ContainerInput, User } from './styles';
+        ContainerInput, User, ContainerBtn } from './styles';
 
 const Login: React.FC = () => {
+
+    document.getElementById("sandwichMenu")!.addEventListener("mouseover", openDrop);
+
+    function openDrop() {
+        document.getElementById("dropdownMenu")!.style.display = 'block';
+    }
+
+    document.getElementById("sandwichMenu")!.addEventListener("mouseout", closeDrop);
+
+    function closeDrop() {
+        document.getElementById("dropdownMenu")!.style.display = 'none';
+    }
+
     return (
         <Container>
             <LoginCont>
@@ -19,6 +32,10 @@ const Login: React.FC = () => {
                             <input type="password" placeholder="" required></input>
                             <label>SENHA</label>
                         </User>
+                        <ContainerBtn>
+                            <a href="/mainmenu"><button>entrar</button></a>
+                            <a href="#">Esqueceu sua senha?</a>
+                        </ContainerBtn>
                     </ContainerInput>
                 </ContainerBottom>
             </LoginCont>

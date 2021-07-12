@@ -56,10 +56,9 @@ export const User = styled.div`
     align-items: center;
     flex-direction: column;
     position: relative;
-    margin: 1.5vh 0px;
    
     input {
-        width: 22vw;
+        width: 21vw;
         height: 5vh;
         background-color: transparent;
         border: 0vh;
@@ -93,12 +92,48 @@ export const User = styled.div`
     label {
         width: 0vh;
         margin-top: -2vh;
-        margin-left: -44vh;
+        margin-left: -40vh;
         cursor: text;
-        font-size: 2.5vh;
+        font-size: 2.3vh;
         padding: 1vh;
         color: #00579D;
         font-weight: bold;
         z-index: 0;
+    }
+`;
+
+export const ContainerBtn = styled.div`
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 8vh;
+
+    button {
+        width: 6.25vw;
+        height: 4.5vh;
+        border-radius: 1vh;
+        border: 0;
+        margin-right: 10vh;
+        text-transform: uppercase;
+        font-weight: 600;
+        background-color: #005DA5;
+        color: white;
+        font-size: 2.2vh;
+        box-shadow: 0vh 1vh 1vh rgba(0, 0, 0, 0.25);
+
+        &:hover {
+            cursor: pointer;
+            background-color: rgb(0, 79, 139)
+        }
+    }
+
+    a {
+        color: #005DA5;
+        font-size: 2vh;
+        font-weight: bold;
+        text-decoration: none;
     }
 `;

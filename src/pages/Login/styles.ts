@@ -69,7 +69,7 @@ export const User = styled.div`
         font-weight: bold;
         padding: 1vh;
         z-index: 2;
-
+        transition: all 0.2s;
 
         &:focus + label, .searchformfld &:not(:placeholder-shown) + label {
             transform: scale(0.9) translateY(-100%) translateX(-3vh); 

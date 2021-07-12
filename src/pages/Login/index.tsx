@@ -2,20 +2,7 @@ import React from 'react';
 import { Container, Line, LoginCont, ContainerBottom,
         ContainerInput, User, ContainerBtn } from './styles';
 
-const Login: React.FC = () => {
-
-    document.getElementById("sandwichMenu")!.addEventListener("mouseover", openDrop);
-
-    function openDrop() {
-        document.getElementById("dropdownMenu")!.style.display = 'block';
-    }
-
-    document.getElementById("sandwichMenu")!.addEventListener("mouseout", closeDrop);
-
-    function closeDrop() {
-        document.getElementById("dropdownMenu")!.style.display = 'none';
-    }
-
+const Login: React.FC = () => {    
     return (
         <Container>
             <LoginCont>

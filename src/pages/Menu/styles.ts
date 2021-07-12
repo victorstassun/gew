@@ -4,8 +4,7 @@ export const ContainerNavbar = styled.div`
     width: 100%;
     height: 8vh;
     background-color: white;
-    box-shadow: 0.1vh 0.1vh 0.5vh rgb(0, 0, 0, 0.25);
-    position: absolute;
+    box-shadow: 0.1vh 0.1vh 0.8vh rgb(0, 0, 0, 0.35);
 `;
 
 export const Logo = styled.div`
@@ -52,23 +51,28 @@ export const SandwichMenu = styled.div`
     margin: 2.5vh 2vw 0 1vw;
     float: right;
     background-image: linear-gradient( to bottom, #00579D 20%, #FFF 20%, #FFF 40%, #00579D 40%, #00579D 60%, #FFF 60%, #FFF 80%, #00579D 80%);
+
+    &:hover {
+        cursor: pointer;
+    }
 `;
 
 export const DropdownMenu = styled.div`
     width: 10vw;
     height: 20vh;
     background: #fff;
-    box-shadow: 0.1vh 0.1vh 0.5vh rgb(0, 0, 0, 0.25);
+    box-shadow: 0.1vh 0.1vh 0.8vh rgb(0, 0, 0, 0.35);
     position: absolute;
-    margin-top: 5.5vh;
-    transform: translateX(-5.85vw);
+    margin-top: 5.55vh;
+    transform: translateX(-6.5vw);
     display: none;
     z-index: 10;
+
+    transition: all 2s;
 
     ul { 
         width: 100%;
         height: 20vh;
-        display: flex;
         flex-direction: column;
 
         li {
@@ -87,27 +91,28 @@ export const DropdownMenu = styled.div`
 
             a {
                 color: #005DA5;
+                font-size: 2.5vh;
 
                 &:hover {
                     cursor: pointer;
                 }
+                
             }
 
             &:after {
                 content: "";
-                width: 90%;
+                width: 80%;
                 height: 0.1vh;
                 margin: 5.5vh 0 0 5%;
                 position: absolute;
-                background: #c4c4c4;
-
-                &::last-child {
-                    display: none;
-                }
+                background: rgb(196, 196, 196, 0.6);
             }
         }
-    }
 
+        li:last-child:after {
+            display: none;
+        }
+    }
 `;
 
 export const LanguageIndicator = styled.div`

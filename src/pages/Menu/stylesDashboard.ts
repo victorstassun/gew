@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ContainerMenu = styled.div`
     width: 35vh;
     height: 80vh;
-    margin-top: 14vh;
+    margin-top: 6vh;
     margin-left: -11vw;
     background-color: white;
     border-radius: 0 2vh 2vh 0;
@@ -13,12 +13,14 @@ export const ContainerMenu = styled.div`
     display: flex;
     justify-content: space-between;
     z-index: 10;
+    transition: all 0.1s;
 
     &:after {
         content: "";
         width: 35vh;
         height: 75vh;
         margin-top: 2.5vh;
+        margin-left: -0.2vw;
         position: absolute;
         border-right: 0.35vh solid #00579D;
     }
@@ -32,43 +34,70 @@ export const ContainerInfo = styled.div`
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    z-index: 999;
 `;
 
 export const UserImg = styled.div`
-    width: 6vh;
-    height: 7.25vh;
-    background-image: url("https://raw.githubusercontent.com/ThiagoPetry/dev-frontend-ctw/350361ef83b3dc4530eed3c8860849b6e958d20c/Home/img/user.svg");
-    background-position: center;
-    background-size: cover;
+    width: 8vh;
+    height: 8vh;
     border-radius: 1vh;
     margin-left: 12.5vw;
-    border: 1px solid #00579D;
+    border: 0.5vh solid #00579D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    p {
+        width: 11vw;
+        margin-left: 4.5vw;
+        color: #00579D;
+        font-size: 1.4vw;
+        font-weight: bold;
+        position: absolute;
+        display: none;
+
+        a {
+            font-weight: 100;
+        }
+    }
 `;
 
 export const NewsImg = styled.div`
-    width: 5vh;
-    height: 4.6vh;
-    background-image: url("https://raw.githubusercontent.com/ThiagoPetry/dev-frontend-ctw/350361ef83b3dc4530eed3c8860849b6e958d20c/Home/img/news.svg");
-    background-position: center;
-    background-size: cover;
-    margin-left: 12.5vw;
+    width: 10vh;
+    height: 6vh;
+    margin: -2vh 0 0 12.5vw;
     margin-bottom: 48vh;
     display: flex;
-    justify-content: right;
+    justify-content: center;
+    
+    #news-img {
+        cursor: pointer;
+    }
+
+    p {
+        margin-left: 1.8vw;
+        color: #00579D;
+        font-size: 1.2vw;
+        font-weight: bold;
+        position: absolute;
+        display: none;
+    }
 `;
 
 export const LineBlue = styled.div`
-    width: 100%;
-    height: 8vh;
-    background-color: white;
-    box-shadow: 0.1vh 0.1vh 0.8vh rgb(0, 0, 0, 0.35);
+    content: "";
+    width: 14vw;
+    height: 0.1vh;
+    margin: 19.75vh 0 0 1.2vw;
+    position: absolute;
+    background-color: #00579D;
+    display: none;
 `;
+
 export const RefreshImg = styled.div`
     width: 1.2vw;
     height: 2.55vh;
-    background-image: url("https://raw.githubusercontent.com/ThiagoPetry/dev-frontend-ctw/350361ef83b3dc4530eed3c8860849b6e958d20c/Home/img/refresh.svg");
-    background-position: center;
-    background-size: cover;
     transform: translate(5vw, 16.5vh);
     position: absolute;
     display: none;
@@ -77,9 +106,6 @@ export const RefreshImg = styled.div`
 export const DeleteImg = styled.div`
     width: 1.2vw;
     height: 2.6vh;
-    background-image: url("https://raw.githubusercontent.com/ThiagoPetry/dev-frontend-ctw/350361ef83b3dc4530eed3c8860849b6e958d20c/Home/img/delete.svg");
-    background-position: center;
-    background-size: cover;
     transform: translate(7vw, 16.5vh);
     position: absolute;
     display: none;
@@ -119,7 +145,7 @@ export const Aba = styled.div`
 
 export const TitleMsg = styled.div`
     width: 12vw;
-    margin-left: 0.5vw;
+    margin-left: 1.4vw;
 
     p {
         color: #00579D;
@@ -131,7 +157,7 @@ export const TitleMsg = styled.div`
 
 export const TextMsg = styled.div`
     width: 12vw;
-    margin-left: 0.5vw;
+    margin-left: 1.4vw;
 
     p {
         color: #00579D;
@@ -143,9 +169,9 @@ export const TextMsg = styled.div`
 export const ExitImg = styled.div`
     width: 5vh;
     height: 5vh;
-    background-image: url("https://raw.githubusercontent.com/ThiagoPetry/dev-frontend-ctw/350361ef83b3dc4530eed3c8860849b6e958d20c/Home/img/exit.svg");
-    background-position: center;
-    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 12.5vw;
 `;
 
@@ -154,7 +180,7 @@ export const BtnOpen = styled.div`
     width: 2vh;
     height: 2vh;
     margin-top: 38.8vh;
-    margin-left: 16.4vw;
+    margin-left: 16.3vw;
     position: absolute;
     background-color: white;
     border-radius: 0.1vh 0px 0.1vh 0px;

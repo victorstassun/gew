@@ -21,4 +21,7 @@ export default createGlobalStyle`
     cursor: pointer;
   }
 
+  #icon-news, #icon-ref, #icon-del {
+    cursor: pointer;
+  }
 `;

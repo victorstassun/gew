@@ -99,6 +99,7 @@ export const User = styled.div`
         color: #00579D;
         font-weight: bold;
         z-index: 0;
+        text-shadow: 0.2vh 0.2vh 0.2vh rgba(0, 0, 0, 0.2);
     }
 `;
 
@@ -135,5 +136,6 @@ export const ContainerBtn = styled.div`
         font-size: 2.2vh;
         font-weight: bold;
         text-decoration: none;
+        text-shadow: 0.2vh 0.2vh 0.2vh rgba(0, 0, 0, 0.2);
     }
 `;

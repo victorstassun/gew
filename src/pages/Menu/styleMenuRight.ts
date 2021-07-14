@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ContainerMenuRight = styled.div`
     width: 30vw;
     height: 76vh;
-    margin: 9.5vh 0 0 82vw;
+    margin: 9.5vh 0 0 80vw;
     display: flex;
     flex-direction: column;
     position: fixed;

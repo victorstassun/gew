@@ -153,7 +153,7 @@ const Menu: React.FC = () => {
             <ContainerMenuRight>
                 <ContIcons>
                     <Icon>
-                       <AiOutlineFolderView size={40} color="#fff" /> 
+                       <AiOutlineFolderView size={50} color="#fff" /> 
                     </Icon> 
                     <TextMenuRight>
                         <a>VISUALIZAR</a>
@@ -162,7 +162,7 @@ const Menu: React.FC = () => {
                 </ContIcons>
                 <ContIcons>
                     <Icon>
-                        <CgInsertAfterR size={40} color="#fff" />
+                        <CgInsertAfterR size={50} color="#fff" />
                     </Icon>
                     <TextMenuRight>
                         <a>CADASTRAR</a>
@@ -171,7 +171,7 @@ const Menu: React.FC = () => {
                 </ContIcons>
                 <ContIcons>
                     <Icon>
-                        <RiFileEditFill size={40} color="#fff" />
+                        <RiFileEditFill size={50} color="#fff" />
                     </Icon>
                     <TextMenuRight>
                         <a>EDITAR</a>
@@ -180,7 +180,7 @@ const Menu: React.FC = () => {
                 </ContIcons>
                 <ContIcons>
                     <Icon>
-                        <IoPersonAddSharp size={40} color="#fff" />
+                        <IoPersonAddSharp size={50} color="#fff" />
                     </Icon>
                     <TextMenuRight>
                         <a>CADASTRAR</a>
@@ -189,7 +189,7 @@ const Menu: React.FC = () => {
                 </ContIcons>
                 <ContIcons>
                     <Icon> 
-                        <GiOrganigram size={40} color="#fff" />
+                        <GiOrganigram size={50} color="#fff" />
                     </Icon>
                     <TextMenuRight>
                         <a>ALOCAR</a>
@@ -198,7 +198,7 @@ const Menu: React.FC = () => {
                 </ContIcons>
                 <ContIcons>
                     <Icon>
-                        <GoGraph size={40} color="#fff" />
+                        <GoGraph size={50} color="#fff" />
                     </Icon>
                     <TextMenuRight>
                         <a>IR PARA</a>

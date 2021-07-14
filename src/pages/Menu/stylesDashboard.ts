@@ -59,6 +59,7 @@ export const UserImg = styled.div`
 
         a {
             font-weight: 100;
+            color: #00579D;
         }
     }
 `;

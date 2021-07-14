@@ -95,14 +95,14 @@ const Menu: React.FC = () => {
             <ContainerNavbar>
                 <Logo></Logo>
                 <PageIndicator>
-                    <a>Menu</a>
+                    <a href="./">Menu</a>
                 </PageIndicator>
                 <SandwichMenu onClick={openMenu}>
                     <DropdownMenu id="dropdownMenu">
                         <ul>
-                            <li><a>Perfil</a></li>
-                            <li><a>Configurações</a></li>
-                            <li><a>Sair</a></li>
+                            <li><a href="./">Perfil</a></li>
+                            <li><a href="./">Configurações</a></li>
+                            <li><a href="./">Sair</a></li>
                         </ul>
                     </DropdownMenu>
                 </SandwichMenu>
@@ -116,7 +116,7 @@ const Menu: React.FC = () => {
                 <ContainerInfo>
                     <UserImg id="user-img">
                         <FaRegUser size={40} color="#00579D" />
-                        <p id="user-name">Seja bem vindo, <a>Renato Silva</a></p> 
+                        <p id="user-name">Seja bem vindo, <a href="./">Renato Silva</a></p> 
                     </UserImg>
                     <NewsImg id="news-img">
                         <IoNewspaperOutline size={40} id="icon-news" color="#00579D" />
@@ -156,8 +156,8 @@ const Menu: React.FC = () => {
                        <AiOutlineFolderView size={40} color="#fff" /> 
                     </Icon> 
                     <TextMenuRight>
-                        <a>VISUALIZAR</a>
-                        <a>PROJETOS</a>
+                        <a href="./">VISUALIZAR</a>
+                        <a href="./">PROJETOS</a>
                     </TextMenuRight>
                 </ContIcons>
                 <ContIcons>
@@ -165,8 +165,8 @@ const Menu: React.FC = () => {
                         <CgInsertAfterR size={40} color="#fff" />
                     </Icon>
                     <TextMenuRight>
-                        <a>CADASTRAR</a>
-                        <a>PROJETOS</a>
+                        <a href="./">CADASTRAR</a>
+                        <a href="./">PROJETOS</a>
                     </TextMenuRight>
                 </ContIcons>
                 <ContIcons>
@@ -174,8 +174,8 @@ const Menu: React.FC = () => {
                         <RiFileEditFill size={40} color="#fff" />
                     </Icon>
                     <TextMenuRight>
-                        <a>EDITAR</a>
-                        <a>PROJETOS</a>
+                        <a href="./">EDITAR</a>
+                        <a href="./">PROJETOS</a>
                     </TextMenuRight>
                 </ContIcons>
                 <ContIcons>
@@ -183,8 +183,8 @@ const Menu: React.FC = () => {
                         <IoPersonAddSharp size={40} color="#fff" />
                     </Icon>
                     <TextMenuRight>
-                        <a>CADASTRAR</a>
-                        <a>CONSULTORES</a>
+                        <a href="./">CADASTRAR</a>
+                        <a href="./">CONSULTORES</a>
                     </TextMenuRight>
                 </ContIcons>
                 <ContIcons>
@@ -192,8 +192,8 @@ const Menu: React.FC = () => {
                         <GiOrganigram size={40} color="#fff" />
                     </Icon>
                     <TextMenuRight>
-                        <a>ALOCAR</a>
-                        <a>CONSULTORES</a>
+                        <a href="./">ALOCAR</a>
+                        <a href="./">CONSULTORES</a>
                     </TextMenuRight>
                 </ContIcons>
                 <ContIcons>
@@ -201,12 +201,11 @@ const Menu: React.FC = () => {
                         <GoGraph size={40} color="#fff" />
                     </Icon>
                     <TextMenuRight>
-                        <a>IR PARA</a>
-                        <a>DASHBOARDS</a>
+                        <a href="./">IR PARA</a>
+                        <a href="./">DASHBOARDS</a>
                     </TextMenuRight>
                 </ContIcons>
         </ContainerMenuRight>
-
     </>
     );
 };

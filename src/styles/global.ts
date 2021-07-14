@@ -25,4 +25,8 @@ export default createGlobalStyle`
   #icon-news, #icon-ref, #icon-del {
     cursor: pointer;
   }
+
+  a {
+    text-decoration: none;
+  }
 `;

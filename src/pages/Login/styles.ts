@@ -112,11 +112,11 @@ export const ContainerBtn = styled.div`
     margin-top: 8vh;
 
     button {
-        width: 6.25vw;
-        height: 4.5vh;
+        width: 7vw;
+        height: 5vh;
         border-radius: 1vh;
         border: 0;
-        margin-right: 10vh;
+        margin-right: 7vh;
         text-transform: uppercase;
         font-weight: 600;
         background-color: #005DA5;
@@ -132,7 +132,7 @@ export const ContainerBtn = styled.div`
 
     a {
         color: #005DA5;
-        font-size: 2vh;
+        font-size: 2.2vh;
         font-weight: bold;
         text-decoration: none;
     }

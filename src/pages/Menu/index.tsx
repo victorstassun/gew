@@ -1,29 +1,25 @@
 import React, { MouseEvent } from 'react';
-import { ContainerNavbar, Logo, PageIndicator, SandwichMenu, DropdownMenu,
-        LanguageIndicator, Flag, VectorLanguage } from './styles';
 
-import { IoNewspaperOutline, IoExitOutline } from 'react-icons/io5';
+import { IoNewspaperOutline, IoExitOutline, IoPersonAddSharp } from 'react-icons/io5';
 import { FaRegUser } from 'react-icons/fa';
 import { FiRefreshCcw } from 'react-icons/fi';
-import { RiDeleteBinLine } from 'react-icons/ri';
-
+import { RiDeleteBinLine, RiFileEditFill } from 'react-icons/ri';
 import { AiOutlineFolderView } from 'react-icons/ai';
 import { CgInsertAfterR } from 'react-icons/cg';
-import { RiFileEditFill } from 'react-icons/ri';
-import { IoPersonAddSharp } from 'react-icons/io5';
 import { GoGraph } from 'react-icons/go';
 import { GiOrganigram } from 'react-icons/gi';
 
-
+import { ContainerNavbar, Logo, PageIndicator, SandwichMenu, DropdownMenu,
+    LanguageIndicator, Flag, VectorLanguage } from './styles';
 
 import { ContainerMenu, ContainerInfo, UserImg, NewsImg, LineBlue, DeleteImg, RefreshImg,
-    ContainerMsg, Msg, Aba, LineMsg, TextMsg, TitleMsg, BtnOpen, ExitImg } from './stylesDashboard';
+    ContainerMsg, Msg, Aba, LineMsg, TextMsg, TitleMsg, BtnOpen, ExitImg } from './styleMenuLeft';
 
 import { ContainerMenuRight, ContIcons, Icon, TextMenuRight } from './styleMenuRight';
        
 const Menu: React.FC = () => {
 
-    function openMenu() {
+    function openMenuNavbar() {
         var elemento = document.getElementById("dropdownMenu")!.style.display;
         
         if(elemento === 'block') {
@@ -40,20 +36,22 @@ const Menu: React.FC = () => {
 
             if(status !== 1) {
                 document.getElementById("btn-open")!.style.transform = "rotate(225deg)";
-                document.getElementById("btn-open")!.style.marginLeft = "16.2vw";
-                document.getElementById("btn-open")!.style.backgroundColor = "transparent";
+                document.getElementById("btn-open")!.style.marginLeft = "97%";
 
+                document.getElementById("container-menu")!.style.overflow = 'hidden';
                 document.getElementById("container-menu")!.style.transform = 'translateX(11vw)';
                 document.getElementById("user-img")!.style.transform = 'translateX(-11vw)';
                 document.getElementById("user-img")!.style.width = '8vh';
                 document.getElementById("user-img")!.style.height = '9.25vh';
 
-                document.getElementById("news-img")!.style.transform = 'translate(-12vw, 1vh)';
+                //document.getElementById("news-img")!.style.transform = 'translate(-12vw, 1vh)';
+                document.getElementById("news-img")!.style.transform = 'translate(-12vw, 1.8vh)';
                 document.getElementById("news-img")!.style.width = '2.77vh';
                 document.getElementById("news-img")!.style.height = '2.73vh';
                 document.getElementById("news-img")!.style.justifyContent = 'start';
 
-                document.getElementById("title-not")!.style.marginTop = '1.75vh';
+                //document.getElementById("title-not")!.style.marginTop = '1.75vh';
+                document.getElementById("title-not")!.style.marginTop = '1.5vh';
                 document.getElementById("user-name")!.style.margin = '1vh 0 0 16vw';
 
                 document.getElementById("user-name")!.style.display = "block";
@@ -65,6 +63,7 @@ const Menu: React.FC = () => {
 
                 status = status + 1;
             } else {
+                document.getElementById("container-menu")!.style.overflow = 'visible';
                 document.getElementById("container-menu")!.style.transform = 'translateX(0vw)';
                 document.getElementById("user-img")!.style.transform = 'translateX(0vw)';
                 document.getElementById("user-img")!.style.width = '8vh';
@@ -82,7 +81,7 @@ const Menu: React.FC = () => {
                 document.getElementById("container-msg")!.style.display = "none";
 
                 document.getElementById("btn-open")!.style.transform = "rotate(45deg)";
-                document.getElementById("btn-open")!.style.marginLeft = "16.3vw";
+                document.getElementById("btn-open")!.style.marginLeft = "97%";
                 document.getElementById("btn-open")!.style.backgroundColor = "#fff";
 
                 status = status - 1;
@@ -97,7 +96,7 @@ const Menu: React.FC = () => {
                 <PageIndicator>
                     <a href="./">Menu</a>
                 </PageIndicator>
-                <SandwichMenu onClick={openMenu}>
+                <SandwichMenu onClick={openMenuNavbar}>
                     <DropdownMenu id="dropdownMenu">
                         <ul>
                             <li><a href="./">Perfil</a></li>

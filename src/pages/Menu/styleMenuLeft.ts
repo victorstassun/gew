@@ -12,6 +12,7 @@ export const ContainerMenu = styled.div`
     position: fixed;
     display: flex;
     justify-content: space-between;
+    cursor: default;
     z-index: 10;
     transition: all 0.1s;
 
@@ -47,7 +48,6 @@ export const UserImg = styled.div`
     justify-content: center;
     align-items: center;
 
-
     p {
         width: 11vw;
         margin-left: 4.5vw;
@@ -71,6 +71,7 @@ export const NewsImg = styled.div`
     margin-bottom: 48vh;
     display: flex;
     justify-content: center;
+    transition: all 0.01s;
     
     #news-img {
         cursor: pointer;
@@ -102,6 +103,7 @@ export const RefreshImg = styled.div`
     transform: translate(5vw, 16.5vh);
     position: absolute;
     display: none;
+    transition: all 0.1s;
 `;
 
 export const DeleteImg = styled.div`
@@ -110,6 +112,7 @@ export const DeleteImg = styled.div`
     transform: translate(7vw, 16.5vh);
     position: absolute;
     display: none;
+    transition: all 0.1s;
 `;
 
 export const ContainerMsg = styled.div`
@@ -147,6 +150,7 @@ export const Aba = styled.div`
 export const TitleMsg = styled.div`
     width: 12vw;
     margin-left: 1.4vw;
+    transition: all 0.1s;
 
     p {
         color: #00579D;
@@ -159,6 +163,7 @@ export const TitleMsg = styled.div`
 export const TextMsg = styled.div`
     width: 12vw;
     margin-left: 1.4vw;
+    transition: all 0.1s;
 
     p {
         color: #00579D;
@@ -174,6 +179,8 @@ export const ExitImg = styled.div`
     justify-content: center;
     align-items: center;
     margin-left: 12.5vw;
+    cursor: pointer;
+    transition: all 0.1s;
 `;
 
 export const BtnOpen = styled.div`
@@ -181,7 +188,7 @@ export const BtnOpen = styled.div`
     width: 2vh;
     height: 2vh;
     margin-top: 38.8vh;
-    margin-left: 16.3vw;
+    margin-left: 97%;
     position: absolute;
     background-color: white;
     border-radius: 0.1vh 0px 0.1vh 0px;
@@ -190,4 +197,5 @@ export const BtnOpen = styled.div`
     transform: rotate(45deg);
     z-index: 90;
     cursor: pointer;
+    transition: all 0.1s;
 `;

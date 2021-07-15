@@ -59,7 +59,7 @@ export const SandwichMenu = styled.div`
 
 export const DropdownMenu = styled.div`
     width: 10vw;
-    height: 20vh;
+    height: 21vh;
     background: #fff;
     box-shadow: 0.1vh 0.1vh 0.8vh rgb(0, 0, 0, 0.35);
     position: absolute;
@@ -68,11 +68,12 @@ export const DropdownMenu = styled.div`
     display: none;
     z-index: 10;
 
-    transition: all 2s;
-
     ul { 
         width: 100%;
-        height: 20vh;
+        height: 21vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         flex-direction: column;
 
         li {
@@ -81,17 +82,24 @@ export const DropdownMenu = styled.div`
             color: #00579D;
             list-style: none;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
 
             &:hover {
-                background-color: rgba(194, 194, 194, 0.25);
+                background: rgb(200, 200, 200, 0.5);
+            }
+
+            &:active {
+                background: #00579D;
+                
+                a {
+                    color: #fff;
+                }
             }
 
             a {
                 color: #005DA5;
-                font-size: 2.5vh;
+                font-size: 2.6vh;
 
                 &:hover {
                     cursor: pointer;
@@ -103,9 +111,9 @@ export const DropdownMenu = styled.div`
                 content: "";
                 width: 80%;
                 height: 0.1vh;
-                margin: 5.5vh 0 0 5%;
+                margin: 7vh 0 0 5%;
                 position: absolute;
-                background: rgb(196, 196, 196, 0.6);
+                background: rgb(200, 200, 200, 0.8);
             }
         }
 

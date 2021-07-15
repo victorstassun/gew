@@ -5,7 +5,7 @@ export const ContainerMenu = styled.div`
     height: 80vh;
     margin-top: 6vh;
     margin-left: -11vw;
-    background-color: white;
+    background-color: #fff;
     border-radius: 0 2vh 2vh 0;
     box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25);
     border: 0.1vh solid rgba(153, 153, 153, 0.40);
@@ -14,14 +14,14 @@ export const ContainerMenu = styled.div`
     justify-content: space-between;
     cursor: default;
     z-index: 10;
-    transition: all 0.1s;
+    transition: all 0.3s;
 
     &:after {
         content: "";
         width: 35vh;
         height: 75vh;
         margin-top: 2.5vh;
-        margin-left: -0.2vw;
+        margin-left: -0.3vw;
         position: absolute;
         border-right: 0.35vh solid #00579D;
     }
@@ -36,6 +36,14 @@ export const ContainerInfo = styled.div`
     align-items: center;
     flex-direction: column;
     z-index: 999;
+
+    #icon-ref, #icon-del, #icon-news, #icon-exit {
+        color: #00579D;
+
+        &:active {
+            color: rgb(0, 87, 157, 0.8);
+        }
+    }
 `;
 
 export const UserImg = styled.div`
@@ -71,10 +79,10 @@ export const NewsImg = styled.div`
     margin-bottom: 48vh;
     display: flex;
     justify-content: center;
-    transition: all 0.01s;
     
     #news-img {
         cursor: pointer;
+        shadowColor: red;
     }
 
     p {
@@ -84,6 +92,7 @@ export const NewsImg = styled.div`
         font-weight: bold;
         position: absolute;
         display: none;
+        transition: all 0.001s;
     }
 `;
 
@@ -150,7 +159,6 @@ export const Aba = styled.div`
 export const TitleMsg = styled.div`
     width: 12vw;
     margin-left: 1.4vw;
-    transition: all 0.1s;
 
     p {
         color: #00579D;
@@ -163,7 +171,7 @@ export const TitleMsg = styled.div`
 export const TextMsg = styled.div`
     width: 12vw;
     margin-left: 1.4vw;
-    transition: all 0.1s;
+    transition: display 0.2s;
 
     p {
         color: #00579D;

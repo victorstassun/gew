@@ -56,6 +56,10 @@ export const User = styled.div`
     align-items: center;
     flex-direction: column;
     position: relative;
+
+    label, input {
+        transition: all 0.2s;
+    }
    
     input {
         width: 21vw;
@@ -67,9 +71,9 @@ export const User = styled.div`
         outline: 0;
         font-size: 2vh;
         font-weight: bold;
+        color: #333;
         padding: 1vh;
         z-index: 2;
-        transition: all 0.2s;
 
         &:focus + label, .searchformfld &:not(:placeholder-shown) + label {
             transform: scale(0.9) translateY(-100%) translateX(-3vh); 

@@ -4,18 +4,21 @@ import { IoNewspaperOutline, IoExitOutline, IoPersonAddSharp } from 'react-icons
 import { FaRegUser } from 'react-icons/fa';
 import { FiRefreshCcw } from 'react-icons/fi';
 import { RiDeleteBinLine, RiFileEditFill } from 'react-icons/ri';
-import { AiOutlineFolderView } from 'react-icons/ai';
+import { AiOutlineFolderView, AiFillEye } from 'react-icons/ai';
 import { CgInsertAfterR } from 'react-icons/cg';
 import { GoGraph } from 'react-icons/go';
 import { GiOrganigram } from 'react-icons/gi';
 
 import { ContainerNavbar, Logo, PageIndicator, SandwichMenu, DropdownMenu,
-    LanguageIndicator, Flag, VectorLanguage } from './styles';
+    LanguageIndicator, Flag, VectorLanguage } from './styleNavbar';
 
 import { ContainerMenu, ContainerInfo, UserImg, NewsImg, LineBlue, DeleteImg, RefreshImg,
     ContainerMsg, Msg, Aba, LineMsg, TextMsg, TitleMsg, BtnOpen, ExitImg } from './styleMenuLeft';
 
 import { ContainerMenuRight, ContIcons, Icon, TextMenuRight } from './styleMenuRight';
+
+import { ContainerHome, ContainerHomeGraph, Card, ContainerHomeCards, ContainerHomeTitle, Graph, GraphTitle
+    , CardContent } from './styles';
        
 const Menu: React.FC = () => {
 
@@ -86,7 +89,6 @@ const Menu: React.FC = () => {
 
                 status = status - 1;
             }
-
     }
 
     return (
@@ -148,6 +150,52 @@ const Menu: React.FC = () => {
                 </ContainerInfo>
                 <BtnOpen id="btn-open" onClick={handdleClick} />
             </ContainerMenu>
+
+            <ContainerHome>
+                <ContainerHomeTitle>
+                    <h1><strong>Visão</strong> Geral</h1>
+                    <p>quadrado</p>
+                </ContainerHomeTitle>
+                <ContainerHomeCards>
+                    <Card>
+                        <div>
+                            <h1>Projetos Concluídos:</h1>
+                        </div>
+                        <CardContent>
+                            <span />
+                        </CardContent>
+                        <div>
+                            <p><strong>Verba Total:</strong>  R$ 159.956,76 <AiFillEye id="icon-eye"/></p>
+                        </div>
+                    </Card>
+                    <Card>
+                        <div>
+                            <h1>Projetos Em Andamento:</h1>
+                        </div>
+                        <CardContent>
+                            <span />
+                        </CardContent>
+                        <div>
+                            <p><strong>Verba Total:</strong>  R$ 159.956,76 <AiFillEye id="icon-eye"/></p>
+                        </div>
+                    </Card>
+                    <Card>
+                        <div>
+                            <h1>Projetos Atrasados:</h1>
+                        </div>
+                        <CardContent>
+                            <span />
+                        </CardContent>
+                        <div>
+                            <p><strong>Verba Total:</strong>  R$ 159.956,76 <AiFillEye id="icon-eye"/></p>
+                        </div>
+                    </Card>
+                </ContainerHomeCards>
+                <ContainerHomeGraph>
+                    <GraphTitle></GraphTitle>
+                    <Graph></Graph>
+                </ContainerHomeGraph>
+            </ContainerHome>
 
             <ContainerMenuRight>
                 <ContIcons>

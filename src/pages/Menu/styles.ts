@@ -1,155 +1,145 @@
 import styled from "styled-components";
 
-export const ContainerNavbar = styled.div`
-    width: 100%;
-    height: 8vh;
-    background-color: white;
-    box-shadow: 0.1vh 0.1vh 0.8vh rgb(0, 0, 0, 0.35);
-`;
+export const ContainerHome = styled.div`
+    position: absolute;
+    top: 14vh;
+    left: 12vw;
+    width: 62vw;
+    height: 80vh;
 
-export const Logo = styled.div`
-    width: 4.2vw;
-    height: 6vh;
-    margin: 1vh 0 0 1vw;
-    background-image: url("https://www.weg.net/institutional/_ui/desktop/theme-institutional/img/brand.svg");
-    float: left;
-    background-size: cover;
-    background-position: center;
-    cursor: pointer;
-`;
-
-export const PageIndicator = styled.div`
-    width: 10vw;
-    height: 8vh;
-    margin-left: 3vw;
-    float: left;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
 
-    a { 
-        font-size: 2.3vh;
-        font-weight: bold;
-        color: #00579D;
-        position: absolute;
+    background-color: #fff;
+    box-shadow: 0.25vh 0.25vh rgb(0, 0, 0, 0.25);
+    border-radius: 0.8vh;
+`;
+
+export const ContainerHomeTitle = styled.div`
+    width: 95%;
+    height: 10vh;
+    border-bottom: 0.3vh solid #00579D;
+    align-items: center;
+
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+        margin-left: 10px;
     }
 
-    &:after {
-        content: "";
-        width: 90%;
-        height: 0.75vh;
-        margin: 7.25vh 0 0 5%;
-        background: #00579D;
-        border-radius: 1vh 1vh 0 0;
+    p {
+        margin-right: 10px;
     }
 `;
 
-export const SandwichMenu = styled.div`
-    width: 2vw;
-    height: 4vh;
-    margin: 2.5vh 2vw 0 1vw;
-    float: right;
-    background-image: linear-gradient( to bottom, #00579D 20%, #FFF 20%, #FFF 40%, #00579D 40%, #00579D 60%, #FFF 60%, #FFF 80%, #00579D 80%);
+export const ContainerHomeCards = styled.div`
+    width: 95%;
+    height: 30vh;
 
-    &:hover {
-        cursor: pointer;
-    }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 `;
 
-export const DropdownMenu = styled.div`
-    width: 10vw;
-    height: 21vh;
-    background: #fff;
-    box-shadow: 0.1vh 0.1vh 0.8vh rgb(0, 0, 0, 0.35);
-    border-radius: 2px;
-    position: absolute;
-    margin-top: 5.55vh;
-    transform: translateX(-6.5vw);
-    display: none;
-    z-index: 10;
+export const CardContent = styled.div`
+    display: flex;
+    flex-direction: column;
+    
 
-    ul { 
+    span {
+        width: 1vh;
+        height: 8.4vh;
+        background-image: linear-gradient( to bottom, #64C3D5 13.3%, #FFF 13.3%, #FFF 17.3%,
+            #0091BD 17.3%, #0091BD 30.6%, #FFF 30.6%, #FFF 34.6%,
+            #005DA5 34.6%, #005DA5 47.9%, #fff 47.9%, #fff 51.9%,
+            #00579D 51.9%, #00579D 65.1%, #fff 65.1%, #fff 69.1%,
+            #0075B1 69.1%, #0075B1 86%, #fff 86%, #fff 90%,
+            #6AACDA 90%, #6AACDA 100%);
+    }
+    `;
+
+export const Card = styled.div`
+    width: 33%;
+    height: 22vh;
+
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    border: 0.2vh solid #00579D;
+    border-radius: 0.8vh;
+
+    box-shadow: 0vh 0.4vh 0.4vh rgb(0, 0, 0, 0.25);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    div {
         width: 100%;
-        height: 21vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-
-        li {
-            width: 100%;
-            height: 7vh;
+        margin: 1.2vh 0 1.2vh 1vh;
+        
+        h1 {
+            font-size: 2.5vh;
             color: #00579D;
-            list-style: none;
+
+            text-shadow: 0.1vh 0.1vh 0.2vh rgb(0, 0, 0, 0.25);
+        }
+
+        p {
+            font-size: 1.6vh;
+            color: #2382BA;
+            text-shadow: 0.1vh 0.1vh 0.2vh rgb(0, 0, 0, 0.25);
+            
             display: flex;
-            justify-content: center;
             align-items: center;
 
-            &:hover {
-                background: rgb(200, 200, 200, 0.2);
+
+            strong {
+                color: #00579D;
+                margin-right: 5px;
             }
 
-            &:active {
-                background: #00579D;
-                
-                a {
-                    color: #fff;
-                }
-            }
+            #icon-eye {
+                width: 2.2vh;
+                height: 2.3vh;
+                margin-left: 5px;
 
-            a {
-                color: #005DA5;
-                font-size: 2.6vh;
+                color: #00579D;
 
                 &:hover {
                     cursor: pointer;
                 }
+            
+                &:active {
+                    color: rgb(0, 87, 157, 0.8);
+                }
                 
             }
-
-            &:after {
-                content: "";
-                width: 80%;
-                height: 0.1vh;
-                margin: 7vh 0 0 5%;
-                position: absolute;
-                background: rgb(200, 200, 200, 0.6);
-            }
-        }
-
-        li:last-child:after {
-            display: none;
         }
     }
 `;
 
-export const LanguageIndicator = styled.div`
-    width: 4vw;
-    height: 6vh;
-    margin: 1.5vh 1vw 1vh 0;
-    float: right;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+export const ContainerHomeGraph = styled.div`
+    width: 95%;
+    height: 35vh;
+    border-radius: 0.8vh;
 `;
 
-export const Flag = styled.div`
-    width: 2vw;
-    height: 3vh;
-    border-radius: 0.1vh;
-    background-image: url(../img/flag.svg);
-    background-size: cover;
-    background-position: center;
+export const GraphTitle = styled.div`
+    width: 100%;
+    height: 5vh;
+    background-color: #00579D;
+    border-radius: 0.8vh 0.8vh 0 0;
 `;
 
-export const VectorLanguage = styled.div`
-    width: 1.4vw;
-    height: 2vh;
-    margin-left: 0.25vw;
-    background-image: url(../img/arrow.svg);
-    background-size: cover;
-    background-position: center;
-    transform: scale(0.65, 0.65);
-    cursor: pointer;
+export const Graph = styled.div`
+    width: 100%;
+    height: 30vh;
+    border: 0.2vh solid #00579D;
+    border-radius: 0 0 0.8vh 0.8vh;
 `;

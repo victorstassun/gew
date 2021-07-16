@@ -163,7 +163,7 @@ const Menu: React.FC = () => {
                         </div>
                         <CardContent>
                             <span />
-                            <h1>87</h1>
+                            <h1 id="complete">87</h1>
                             <GraphContainer />
                         </CardContent>
                         <div>
@@ -176,7 +176,7 @@ const Menu: React.FC = () => {
                         </div>
                         <CardContent>
                             <span />
-                            <h1>14</h1>
+                            <h1 id="up">14</h1>
                             <GraphContainer />
                         </CardContent>
                         <div>
@@ -189,7 +189,7 @@ const Menu: React.FC = () => {
                         </div>
                         <CardContent>
                             <span />
-                            <h1>16</h1>
+                            <h1 id="down">16</h1>
                             <GraphContainer />
                         </CardContent>
                         <div>

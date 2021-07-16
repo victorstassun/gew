@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Complete from '../../assets/complete.svg';
 
 export const ContainerHome = styled.div`
     position: absolute;
@@ -58,6 +59,14 @@ export const CardContent = styled.div`
         font-size: 8vh;
         color: #00579D;
         text-shadow: 0.1vh 0.1vh 0.2vh rgb(0, 0, 0, 0.25);
+    }
+
+    #complete:after {
+        content: '';
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        background-image: url(${Complete});
     }
 
     span {

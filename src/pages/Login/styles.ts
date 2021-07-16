@@ -19,6 +19,7 @@ export const LoginCont = styled.div`
     margin-top: 15vh;
     display: flex;
     justify-content: space-between;
+    background-color: #fff;
     align-items: center;
     flex-direction: column;
     border-radius: 1vh;

@@ -62,6 +62,7 @@ export const DropdownMenu = styled.div`
     height: 21vh;
     background: #fff;
     box-shadow: 0.1vh 0.1vh 0.8vh rgb(0, 0, 0, 0.35);
+    border-radius: 2px;
     position: absolute;
     margin-top: 5.55vh;
     transform: translateX(-6.5vw);
@@ -86,7 +87,7 @@ export const DropdownMenu = styled.div`
             align-items: center;
 
             &:hover {
-                background: rgb(200, 200, 200, 0.5);
+                background: rgb(200, 200, 200, 0.2);
             }
 
             &:active {
@@ -113,7 +114,7 @@ export const DropdownMenu = styled.div`
                 height: 0.1vh;
                 margin: 7vh 0 0 5%;
                 position: absolute;
-                background: rgb(200, 200, 200, 0.8);
+                background: rgb(200, 200, 200, 0.6);
             }
         }
 

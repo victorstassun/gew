@@ -4,6 +4,7 @@ Neste repositório está somente o front-end do projeto.
 ### Recursos
 
 - [x] Login
+- [x] Navbar
 - [ ] Home (Em andamento)
 - [ ] Projetos
 - [ ] Dashboard
@@ -15,7 +16,7 @@ Neste repositório está somente o front-end do projeto.
 - [ ] Gráfico de linha
 - [ ] Configurações
 - [ ] Perfil
-- [ ] Dropdowns
+- [ ] Dropdowns (Em andamento)
 - [ ] Filtros projetos
 - [ ] Filtros dashboard
 - [ ] Pop-ups

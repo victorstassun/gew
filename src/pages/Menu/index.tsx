@@ -18,7 +18,7 @@ import { ContainerMenu, ContainerInfo, UserImg, NewsImg, LineBlue, DeleteImg, Re
 import { ContainerMenuRight, ContIcons, Icon, TextMenuRight } from './styleMenuRight';
 
 import { ContainerHome, ContainerHomeGraph, Card, ContainerHomeCards, ContainerHomeTitle, Graph, GraphTitle
-    , CardContent } from './styles';
+    , CardContent, GraphContainer } from './styles';
        
 const Menu: React.FC = () => {
 
@@ -159,10 +159,12 @@ const Menu: React.FC = () => {
                 <ContainerHomeCards>
                     <Card>
                         <div>
-                            <h1>Projetos Concluídos:</h1>
+                            <h2>Projetos Concluídos:</h2>
                         </div>
                         <CardContent>
                             <span />
+                            <h1>87</h1>
+                            <GraphContainer />
                         </CardContent>
                         <div>
                             <p><strong>Verba Total:</strong>  R$ 159.956,76 <AiFillEye id="icon-eye"/></p>
@@ -170,10 +172,12 @@ const Menu: React.FC = () => {
                     </Card>
                     <Card>
                         <div>
-                            <h1>Projetos Em Andamento:</h1>
+                            <h2>Projetos Em Andamento:</h2>
                         </div>
                         <CardContent>
                             <span />
+                            <h1>14</h1>
+                            <GraphContainer />
                         </CardContent>
                         <div>
                             <p><strong>Verba Total:</strong>  R$ 159.956,76 <AiFillEye id="icon-eye"/></p>
@@ -181,10 +185,12 @@ const Menu: React.FC = () => {
                     </Card>
                     <Card>
                         <div>
-                            <h1>Projetos Atrasados:</h1>
+                            <h2>Projetos Atrasados:</h2>
                         </div>
                         <CardContent>
                             <span />
+                            <h1>16</h1>
+                            <GraphContainer />
                         </CardContent>
                         <div>
                             <p><strong>Verba Total:</strong>  R$ 159.956,76 <AiFillEye id="icon-eye"/></p>

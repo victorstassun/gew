@@ -5,7 +5,7 @@ Neste repositório está somente o front-end do projeto.
 
 - [x] Login
 - [x] Navbar
-- [ ] Home (Em andamento)
+- [ ] Home <p style="color: yellow">(Em andamento)</p>
 - [ ] Projetos
 - [ ] Dashboard
 - [ ] Consultores

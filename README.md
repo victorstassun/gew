@@ -11,14 +11,15 @@ Neste repositório está somente o front-end do projeto.
 - [ ] Consultores
 - [ ] Editar
 - [ ] Cadastrar
-- [ ] Gráficos líquidos
-- [ ] Gráfico de barra
+- [ ] Gráficos líquidos (Em andamento)
+- [ ] Gráfico de barra (Em andamento)
 - [ ] Gráfico de linha
 - [ ] Configurações
 - [ ] Perfil
 - [ ] Dropdowns (Em andamento)
 - [ ] Filtros projetos
 - [ ] Filtros dashboard
+- [ ] Ícones, after, before, active, hover (Em andamento)
 - [ ] Pop-ups
 
 ### Desenvolvedores

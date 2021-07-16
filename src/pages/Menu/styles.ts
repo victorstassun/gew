@@ -26,7 +26,7 @@ export const ContainerHomeTitle = styled.div`
     display: flex;
     justify-content: space-between;
 
-    h1 {
+    h2 {
         margin-left: 10px;
     }
 
@@ -45,20 +45,31 @@ export const ContainerHomeCards = styled.div`
     align-items: center;
 `;
 
+export const GraphContainer = styled.div`
+    
+`;
+
+
 export const CardContent = styled.div`
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: row;
+
+    h1 {
+        font-size: 8vh;
+        color: #00579D;
+        text-shadow: 0.1vh 0.1vh 0.2vh rgb(0, 0, 0, 0.25);
+    }
 
     span {
-        width: 1vh;
+        width: 1.8vh;
         height: 8.4vh;
+        margin-right: 2vw;
         background-image: linear-gradient( to bottom, #64C3D5 13.3%, #FFF 13.3%, #FFF 17.3%,
             #0091BD 17.3%, #0091BD 30.6%, #FFF 30.6%, #FFF 34.6%,
             #005DA5 34.6%, #005DA5 47.9%, #fff 47.9%, #fff 51.9%,
             #00579D 51.9%, #00579D 65.1%, #fff 65.1%, #fff 69.1%,
-            #0075B1 69.1%, #0075B1 86%, #fff 86%, #fff 90%,
-            #6AACDA 90%, #6AACDA 100%);
+            #0075B1 69.1%, #0075B1 82.4%, #fff 82.4%, #fff 86.4%,
+            #6AACDA 86.4%, #6AACDA 100%);
     }
     `;
 
@@ -83,7 +94,7 @@ export const Card = styled.div`
         width: 100%;
         margin: 1.2vh 0 1.2vh 1vh;
         
-        h1 {
+        h2 {
             font-size: 2.5vh;
             color: #00579D;
 

@@ -80,6 +80,11 @@ export const User = styled.div`
             transform: scale(0.9) translateY(-100%) translateX(-3vh); 
         }
 
+        &:focus {
+            border-bottom: 0.4vh solid #00579D;
+            transition: border 0.5s;
+        }
+
         &:active + label {
             transform: scale(0.9) translateY(-100%) translateX(-3vh); 
         }

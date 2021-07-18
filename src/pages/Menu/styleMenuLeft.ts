@@ -4,7 +4,7 @@ export const ContainerMenu = styled.div`
     width: 35vh;
     height: 80vh;
     margin-top: 6vh;
-    margin-left: -11vw;
+    margin-left: -11.5vw;
     background-color: #fff;
     border-radius: 0 2vh 2vh 0;
     box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25);
@@ -21,7 +21,7 @@ export const ContainerMenu = styled.div`
         width: 35vh;
         height: 75vh;
         margin-top: 2.5vh;
-        margin-left: -0.3vw;
+        margin-left: -0.25vw;
         position: absolute;
         border-right: 0.35vh solid #00579D;
     }

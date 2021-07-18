@@ -74,7 +74,7 @@ const Menu: React.FC = () => {
                 document.getElementById("news-img")!.style.transform = 'translate(0vw, 0vh)';
                 document.getElementById("news-img")!.style.width = '10vh';
                 document.getElementById("news-img")!.style.height = '6vh';
-                document.getElementById("news-img")!.style.marginLeft = '14.5vw';
+                document.getElementById("news-img")!.style.marginLeft = '14.8vw';
 
                 document.getElementById("user-name")!.style.display = "none";
                 document.getElementById("title-not")!.style.display = "none";
@@ -154,7 +154,7 @@ const Menu: React.FC = () => {
             <ContainerHome>
                 <ContainerHomeTitle>
                     <h1><strong>Visão</strong> Geral</h1>
-                    <p>quadrado</p>
+                    <span />
                 </ContainerHomeTitle>
                 <ContainerHomeCards>
                     <Card>

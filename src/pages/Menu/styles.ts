@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import Complete from '../../assets/complete.svg';
+import Up from '../../assets/up.svg';
+import Down from '../../assets/down.svg';
 
 export const ContainerHome = styled.div`
     position: absolute;
@@ -27,12 +29,18 @@ export const ContainerHomeTitle = styled.div`
     display: flex;
     justify-content: space-between;
 
-    h2 {
+    h1 {
         margin-left: 10px;
+        color: #00579D;
+        font-weight: 400;
+
+        strong {
+            color: #00579D;
+        }
     }
 
-    p {
-        margin-right: 10px;
+    span {
+
     }
 `;
 
@@ -54,6 +62,7 @@ export const GraphContainer = styled.div`
 export const CardContent = styled.div`
     display: flex;
     flex-direction: row;
+    align-items: center;
 
     h1 {
         font-size: 8vh;
@@ -61,24 +70,52 @@ export const CardContent = styled.div`
         text-shadow: 0.1vh 0.1vh 0.2vh rgb(0, 0, 0, 0.25);
     }
 
-    #complete:after {
+    #complete::after {
         content: '';
-        width: 10px;
-        height: 10px;
+        width: 3vw;
+        height: 4vh;
         position: absolute;
+        margin-top: 3vh;
+        background-size: cover;
+        background-position: center;
         background-image: url(${Complete});
+    }
+
+    #up::after {
+        content: '';
+        width: 3vw;
+        height: 4vh;
+        position: absolute;
+        margin-top: 3vh;
+        margin-left: 0.1vw;
+        background-size: cover;
+        background-position: center;
+        background-image: url(${Up});
+    }
+
+    #down::after {
+        content: '';
+        width: 3vw;
+        height: 4vh;
+        position: absolute;
+        margin-top: 3vh;
+        margin-left: 0.1vw;
+        background-size: cover;
+        background-position: center;
+        background-image: url(${Down});
     }
 
     span {
         width: 1.8vh;
         height: 8.4vh;
         margin-right: 2vw;
-        background-image: linear-gradient( to bottom, #64C3D5 13.3%, #FFF 13.3%, #FFF 17.3%,
-            #0091BD 17.3%, #0091BD 30.6%, #FFF 30.6%, #FFF 34.6%,
-            #005DA5 34.6%, #005DA5 47.9%, #fff 47.9%, #fff 51.9%,
-            #00579D 51.9%, #00579D 65.1%, #fff 65.1%, #fff 69.1%,
-            #0075B1 69.1%, #0075B1 82.4%, #fff 82.4%, #fff 86.4%,
-            #6AACDA 86.4%, #6AACDA 100%);
+        background-image: linear-gradient( to bottom, 
+            #64C3D5 12.3%, #fff 15%, #fff 18%,
+            #0091BD 19.3%, #0091BD 30.6%, #fff 30.6%, #fff 34.6%,
+            #005DA5 36.6%, #005DA5 47.9%, #fff 47.9%, #fff 51.9%,
+            #00579D 54.9%, #00579D 65.1%, #fff 65.1%, #fff 69.1%,
+            #0075B1 72.1%, #0075B1 82.4%, #fff 82.4%, #fff 86.4%,
+            #6AACDA 89.4%, #6AACDA 100%);
     }
     `;
 

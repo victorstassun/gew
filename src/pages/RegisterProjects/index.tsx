@@ -4,7 +4,7 @@ import MenuLeft from '../components/MenuLeft';
 import Navbar from '../components/Navbar';
 import MenuRight from '../components/MenuRight';
 
-const Projects: React.FC = () => {
+const RegisterProjects: React.FC = () => {
 
     return (
         <>
@@ -12,7 +12,7 @@ const Projects: React.FC = () => {
             <MenuLeft />
             <MenuRight />
         </>
-        );
+    );
 };
 
-export default Projects;
+export default RegisterProjects;

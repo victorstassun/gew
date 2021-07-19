@@ -4,7 +4,7 @@ import MenuLeft from '../components/MenuLeft';
 import Navbar from '../components/Navbar';
 import MenuRight from '../components/MenuRight';
 
-const Projects: React.FC = () => {
+const RegisterConsultants: React.FC = () => {
 
     return (
         <>
@@ -15,4 +15,4 @@ const Projects: React.FC = () => {
         );
 };
 
-export default Projects;
+export default RegisterConsultants;

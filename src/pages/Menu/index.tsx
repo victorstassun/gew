@@ -1,7 +1,7 @@
 import React, { MouseEvent } from 'react';
 
 import { IoNewspaperOutline, IoExitOutline, IoPersonAddSharp } from 'react-icons/io5';
-import { FaRegUser } from 'react-icons/fa';
+import { FaUserAlt } from 'react-icons/fa';
 import { FiRefreshCcw } from 'react-icons/fi';
 import { RiDeleteBinLine, RiFileEditFill } from 'react-icons/ri';
 import { AiOutlineFolderView, AiFillEye } from 'react-icons/ai';
@@ -17,8 +17,8 @@ import { ContainerMenu, ContainerInfo, UserImg, NewsImg, LineBlue, DeleteImg, Re
 
 import { ContainerMenuRight, ContIcons, Icon, TextMenuRight } from './styleMenuRight';
 
-import { ContainerHome, ContainerHomeGraph, Card, ContainerHomeCards, ContainerHomeTitle, Graph, GraphTitle
-    , CardContent, GraphContainer } from './styles';
+import { ContainerHome, ContainerHomeGraph, Card, ContainerHomeCards, ContainerHomeTitle, Graph, GraphTitle,
+    CardContent, GraphContainer, GraphCont, GraphContNum, GraphBars, Bar, GraphData, Data } from './styles';
        
 const Menu: React.FC = () => {
 
@@ -116,7 +116,7 @@ const Menu: React.FC = () => {
             <ContainerMenu id="container-menu">
                 <ContainerInfo>
                     <UserImg id="user-img">
-                        <FaRegUser size={40} color="#00579D" />
+                        <FaUserAlt size={40} color="#00579D" />
                         <p id="user-name">Seja bem vindo, <a href="./">Renato Silva</a></p> 
                     </UserImg>
                     <NewsImg id="news-img">
@@ -197,6 +197,7 @@ const Menu: React.FC = () => {
                         </div>
                     </Card>
                 </ContainerHomeCards>
+
                 <ContainerHomeGraph>
                     <GraphTitle>
                         <h1>PROJETOS TERMINADOS NOS ÚLTIMOS 7 DIAS</h1>
@@ -211,15 +212,24 @@ const Menu: React.FC = () => {
                             <GraphContNum>0</GraphContNum>
                         </GraphCont>
                         <GraphBars>
-                            <Bar></Bar>
-                            <Bar></Bar>
-                            <Bar></Bar>
-                            <Bar></Bar>
-                            <Bar></Bar>
-                            <Bar></Bar>
-                            <Bar></Bar>
+                            <Bar id="bar1"></Bar>
+                            <Bar id="bar2"></Bar>
+                            <Bar id="bar3"></Bar>
+                            <Bar id="bar4"></Bar>
+                            <Bar id="bar5"></Bar>
+                            <Bar id="bar6"></Bar>
+                            <Bar id="bar7"></Bar>
                         </GraphBars>
                     </Graph>
+                    <GraphData>
+                        <Data id="data1">01/06</Data>
+                        <Data id="data2">02/06</Data>
+                        <Data id="data3">03/06</Data>
+                        <Data id="data4">04/06</Data>
+                        <Data id="data5">05/06</Data>
+                        <Data id="data6">06/06</Data>
+                        <Data id="data7">07/06</Data>
+                    </GraphData>
                 </ContainerHomeGraph>
             </ContainerHome>
 

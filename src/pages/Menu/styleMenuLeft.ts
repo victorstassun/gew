@@ -51,7 +51,7 @@ export const UserImg = styled.div`
     height: 8vh;
     border-radius: 1vh;
     margin-left: 12.5vw;
-    border: 0.5vh solid #00579D;
+    border: 0.4vh solid #00579D;
     display: flex;
     justify-content: center;
     align-items: center;

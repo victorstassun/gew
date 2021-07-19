@@ -29,11 +29,11 @@ export const ContainerHomeTitle = styled.div`
     justify-content: space-between;
 
     h1 {
-        margin-top: -10px;
-        margin-left: 10px;
-        margin-bottom: 10px;
+        margin-left: 0.8vw;
+        margin-bottom: 1.2vh;
         color: #00579D;
         font-weight: 400;
+        font-size: 2.5vw;
 
         strong {
             color: #00579D;
@@ -124,9 +124,9 @@ export const Card = styled.div`
     width: 33%;
     height: 22vh;
 
-    padding: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
+    padding: 0.15vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
 
     border: 0.2vh solid #00579D;
     border-radius: 0.8vh;
@@ -159,13 +159,13 @@ export const Card = styled.div`
 
             strong {
                 color: #00579D;
-                margin-right: 5px;
+                margin-right: 0.5vw;
             }
 
             #icon-eye {
                 width: 2.2vh;
                 height: 2.3vh;
-                margin-left: 5px;
+                margin-left: 0.5vw;
 
                 color: #00579D;
 

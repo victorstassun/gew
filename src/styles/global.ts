@@ -23,7 +23,7 @@ export default createGlobalStyle`
     cursor: pointer;
   }
 
-  #icon-news, #icon-ref, #icon-del {
+  #iconNews, #iconRef, #iconDel {
     cursor: pointer;
   }
 

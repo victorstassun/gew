@@ -37,7 +37,7 @@ export const ContainerInfo = styled.div`
     flex-direction: column;
     z-index: 999;
 
-    #icon-ref, #icon-del, #icon-news, #icon-exit {
+    #iconRef, #iconDel, #iconNews, #iconExit {
         color: #00579D;
 
         &:active {
@@ -55,6 +55,11 @@ export const UserImg = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    #iconUser {
+        width: 80px;
+        height: 40px;
+    }
 
     p {
         width: 11vw;
@@ -85,6 +90,11 @@ export const NewsImg = styled.div`
         shadowColor: red;
     }
 
+    #iconNews {
+        width: 80px;
+        height: 40px;
+    }
+
     p {
         margin-left: 1.8vw;
         color: #00579D;
@@ -109,19 +119,29 @@ export const LineBlue = styled.div`
 export const RefreshImg = styled.div`
     width: 1.2vw;
     height: 2.55vh;
-    transform: translate(5vw, 16.5vh);
+    transform: translate(4vw, 16.5vh);
     position: absolute;
     display: none;
     transition: all 0.1s;
+
+    #iconRef {
+        width: 40px;
+        height: 20px;
+    }
 `;
 
 export const DeleteImg = styled.div`
     width: 1.2vw;
     height: 2.6vh;
-    transform: translate(7vw, 16.5vh);
+    transform: translate(6vw, 16.5vh);
     position: absolute;
     display: none;
     transition: all 0.1s;
+
+    #iconDel {
+        width: 40px;
+        height: 20px;
+    }
 `;
 
 export const ContainerMsg = styled.div`
@@ -189,6 +209,11 @@ export const ExitImg = styled.div`
     margin-left: 12.5vw;
     cursor: pointer;
     transition: all 0.1s;
+
+    #iconExit {
+        width: 80px;
+        height: 40px;
+    }
 `;
 
 export const BtnOpen = styled.div`

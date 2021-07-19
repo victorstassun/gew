@@ -1,4 +1,8 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+
+interface TypeRoute {
+    route: string;
+}
 
 export const ContainerMenuRight = styled.div`
     width: 30vw;

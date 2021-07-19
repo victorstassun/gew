@@ -1,8 +1,10 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
+import Dashboard from '../pages/Dashboard';
 
 import Login from '../pages/Login';
 import Menu from '../pages/Menu';
+import RegisterConsultants from '../pages/Projects';
 import Projects from '../pages/Projects';
 import RegisterProjects from '../pages/RegisterProjects';
 
@@ -12,6 +14,8 @@ const Routes: React.FC = () => (
         <Route path="/mainmenu" component={Menu} />
         <Route path="/projects" component={Projects} />
         <Route path="/registerprojects" component={RegisterProjects} />
+        <Route path="/registerconsultants" component={RegisterConsultants} />
+        <Route path="/dashboard" component={Dashboard} />
     </Switch>
 );
 

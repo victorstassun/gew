@@ -4,15 +4,21 @@ import MenuLeft from '../components/MenuLeft';
 import Navbar from '../components/Navbar';
 import MenuRight from '../components/MenuRight';
 
-const Projects: React.FC = () => {
+import { ContIcons } from '../components/MenuRight/styles';
+
+
+const Dashboard: React.FC = () => {
 
     return (
         <>
             <Navbar />
             <MenuLeft />
-            <MenuRight />
+            <MenuRight>
+                <ContIcons type={'Dashboard'}></ContIcons>
+            </MenuRight>
+
         </>
         );
 };
 
-export default Projects;
+export default Dashboard;

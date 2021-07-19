@@ -1,8 +1,102 @@
 import styled, { css } from "styled-components";
+import { animated } from 'react-spring';
 
 interface TypeRoute {
-    route: string;
+    type?: 'Dashboard' | 'EditProjects' | 'RegisterConsultants' | 'RegisterProjects' | 'Projects';
 }
+
+const styleTypes = {
+    Dashboard: css `
+        &:nth-child(6) {
+            margin-left: -0.7vw;
+
+            #icons {
+                margin-left: 1.1vw;
+            }
+            
+            &:before {
+                content: "";
+                width: 0.1vw;
+                height: 10vh;
+                margin-left: 0.8vw;
+                background: #fff;
+                position: absolute;
+            }
+        }
+    `,
+    EditProjects: css `
+        &:nth-child(3) {
+            margin-left: -0.7vw;
+
+            #icons {
+                margin-left: 1.1vw;
+            }
+            
+            &:before {
+                content: "";
+                width: 0.1vw;
+                height: 10vh;
+                margin-left: 0.8vw;
+                background: #fff;
+                position: absolute;
+            }
+        }
+    `,
+    RegisterConsultants: css `
+        &:nth-child(4) {
+            margin-left: -0.7vw;
+
+            #icons {
+                margin-left: 1.1vw;
+            }
+            
+            &:before {
+                content: "";
+                width: 0.1vw;
+                height: 10vh;
+                margin-left: 0.8vw;
+                background: #fff;
+                position: absolute;
+            }
+        }
+    `,
+    RegisterProjects: css `
+        &:nth-child(2) {
+            margin-left: -0.7vw;
+
+            #icons {
+                margin-left: 1.1vw;
+            }
+            
+            &:before {
+                content: "";
+                width: 0.1vw;
+                height: 10vh;
+                margin-left: 0.8vw;
+                background: #fff;
+                position: absolute;
+            }
+        }    
+    `,
+    Projects: css `
+        &:nth-child(1) {
+            margin-left: -0.7vw;
+
+            #icons {
+                margin-left: 1.1vw;
+            }
+            
+            &:before {
+                content: "";
+                width: 0.1vw;
+                height: 10vh;
+                margin-left: 0.8vw;
+                background: #fff;
+                position: absolute;
+            }
+        }    
+    `,
+};
 
 export const ContainerMenuRight = styled.div`
     width: 30vw;
@@ -13,7 +107,7 @@ export const ContainerMenuRight = styled.div`
     position: fixed;
 `;
 
-export const ContIcons = styled.div`
+export const ContIcons = styled(animated.div)<TypeRoute>`
     width: 100%;
     height: 12.3vh;
     margin-bottom: 0.3vh;
@@ -23,23 +117,6 @@ export const ContIcons = styled.div`
     align-items: center;
     cursor: pointer;
     transition: all 0.4s;
-
-    &:first-child {
-        margin-left: -0.7vw;
-
-        #icons {
-            margin-left: 1.1vw;
-        }
-        
-        &:before {
-            content: "";
-            width: 0.1vw;
-            height: 10vh;
-            margin-left: 0.8vw;
-            background: #fff;
-            position: absolute;
-        }
-    }
 
     &:nth-child(1), &:nth-child(2) { background-color: #00579D; }
     &:nth-child(3), &:nth-child(4) { background-color: #0075B1; }
@@ -59,6 +136,13 @@ export const ContIcons = styled.div`
             margin-left: 5vh;
         }
     }
+
+    
+    ${props => styleTypes[props.type || 'Projects']}
+    ${props => styleTypes[props.type || 'Dashboard']}
+    ${props => styleTypes[props.type || 'EditProjects']}
+    ${props => styleTypes[props.type || 'RegisterConsultants']}
+    ${props => styleTypes[props.type || 'RegisterProjects']}
 
 `;
 

@@ -44,8 +44,8 @@ const MenuRight: React.FC = () => {
                     <IoPersonAddSharp id="icons" color="#fff" />
                 </Icon>
                 <TextMenuRight>
-                    <a href="./">CADASTRAR</a>
-                    <a href="./">CONSULTORES</a>
+                    <a href="../RegisterConsultants">CADASTRAR</a>
+                    <a href="../RegisterConsultants">CONSULTORES</a>
                 </TextMenuRight>
             </ContIcons>
             <ContIcons>
@@ -62,8 +62,8 @@ const MenuRight: React.FC = () => {
                     <GoGraph id="icons" color="#fff" />
                 </Icon>
                 <TextMenuRight>
-                    <a href="./">IR PARA</a>
-                    <a href="./">DASHBOARDS</a>
+                    <a href="../Dashboard">IR PARA</a>
+                    <a href="../Dashboard">DASHBOARDS</a>
                 </TextMenuRight>
             </ContIcons>
         </ContainerMenuRight>

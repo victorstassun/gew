@@ -192,6 +192,14 @@ export const GraphTitle = styled.div`
     height: 5vh;
     background-color: #00579D;
     border-radius: 0.8vh 0.8vh 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        color: #fff;
+        font-size: 2.5vh;
+    }
 `;
 
 export const Graph = styled.div`

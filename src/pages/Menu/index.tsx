@@ -198,8 +198,28 @@ const Menu: React.FC = () => {
                     </Card>
                 </ContainerHomeCards>
                 <ContainerHomeGraph>
-                    <GraphTitle></GraphTitle>
-                    <Graph></Graph>
+                    <GraphTitle>
+                        <h1>PROJETOS TERMINADOS NOS ÚLTIMOS 7 DIAS</h1>
+                    </GraphTitle>
+                    <Graph>
+                        <GraphCont>
+                            <GraphContNum>+5</GraphContNum>
+                            <GraphContNum>4</GraphContNum>
+                            <GraphContNum>3</GraphContNum>
+                            <GraphContNum>2</GraphContNum>
+                            <GraphContNum>1</GraphContNum>
+                            <GraphContNum>0</GraphContNum>
+                        </GraphCont>
+                        <GraphBars>
+                            <Bar></Bar>
+                            <Bar></Bar>
+                            <Bar></Bar>
+                            <Bar></Bar>
+                            <Bar></Bar>
+                            <Bar></Bar>
+                            <Bar></Bar>
+                        </GraphBars>
+                    </Graph>
                 </ContainerHomeGraph>
             </ContainerHome>
 

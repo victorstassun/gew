@@ -21,7 +21,7 @@ export const ContainerMenu = styled.div`
         width: 35vh;
         height: 75vh;
         margin-top: 2.5vh;
-        margin-left: -0.25vw;
+        margin-left: -0.30vw;
         position: absolute;
         border-right: 0.35vh solid #00579D;
     }

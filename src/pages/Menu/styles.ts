@@ -22,7 +22,6 @@ export const ContainerHome = styled.div`
 
 export const ContainerHomeTitle = styled.div`
     width: 95%;
-    height: 10vh;
     border-bottom: 0.3vh solid #00579D;
     align-items: center;
 
@@ -30,7 +29,9 @@ export const ContainerHomeTitle = styled.div`
     justify-content: space-between;
 
     h1 {
+        margin-top: -10px;
         margin-left: 10px;
+        margin-bottom: 10px;
         color: #00579D;
         font-weight: 400;
 
@@ -182,14 +183,16 @@ export const Card = styled.div`
 `;
 
 export const ContainerHomeGraph = styled.div`
-    width: 95%;
+    width: 92.5%;
     height: 35vh;
     border-radius: 0.8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `;
 
 export const GraphTitle = styled.div`
     width: 100%;
-    height: 5vh;
     background-color: #00579D;
     border-radius: 0.8vh 0.8vh 0 0;
     display: flex;
@@ -199,12 +202,123 @@ export const GraphTitle = styled.div`
     h1 {
         color: #fff;
         font-size: 2.5vh;
+        padding: 5px;
     }
 `;
 
 export const Graph = styled.div`
     width: 100%;
-    height: 30vh;
+    height: 45vh;   
     border: 0.2vh solid #00579D;
     border-radius: 0 0 0.8vh 0.8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
+
+export const GraphCont = styled.div`
+    width: 5vw;
+    height: 28vh;
+    margin-top: -2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+`;
+
+export const GraphContNum = styled.div`
+    width: 5vw;
+    height: 28vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+    color: #555555;
+    font-size: 2.8vh;
+
+    &::after {
+        content: "";
+        width: 42vw;
+        height: 0.1vh;
+        margin-left: 45vw;
+        background-color: rgb(167, 167, 167);
+        display: flex;
+        position: absolute;
+        z-index: 1;
+    }
+`;
+
+export const GraphBars = styled.div`
+    width: 41vw;
+    height: 23vh;
+    margin-top: -2vh;
+    background-color: rgb(226, 226, 226);
+    border: 0.1vh solid rgb(167, 167, 167);
+    border-top: 0;
+    border-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    #bar1 {
+        height: 23.5vh;
+        margin-top: 0vh;
+        margin-left: 1vw;
+    }
+
+    #bar2 {height: 18.7vh; margin-top: 4.8vh;}
+    #bar3 {height: 5vh; margin-top: 18.5vh;}
+    #bar4 {height: 9.5vh; margin-top: 14vh;}
+    #bar5 {height: 19vh; margin-top: 4.5vh;}
+    #bar6 {height: 23.5vh; margin-top: 0vh;}
+    
+    #bar7 {
+        height: 18.7vh;
+        margin-top: 4.8vh;
+        margin-right: 1vw;
+    }
+`;
+
+export const Bar = styled.div`
+    width: 4vw;
+    background-color: #00579D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+
+    &:hover {
+        background-color: #004b88;
+    }
+`;
+
+export const GraphData = styled.div`
+    width: 37vw;
+    margin-top: -4vh;
+    margin-left: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+`;
+
+export const Data = styled.div`
+    font-size: 2vh;
+    font-weight: bold;
+    color: #555555;
+    display: flex;
+    justify-content: center;
+
+    &::after {
+        content: "";
+        width: 0.1vw;
+        height: 3vh;
+        margin-top: -3.5vh;
+        background-color: rgb(167, 167, 167);;
+        display: flex;
+        position: absolute;
+        z-index: 2;
+    }
 `;

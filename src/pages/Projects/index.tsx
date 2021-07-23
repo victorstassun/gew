@@ -1,12 +1,14 @@
 import React from 'react';
 
+import { IoMdArrowDropright } from 'react-icons/io';
+
 import MenuLeft from '../components/MenuLeft';
 import Navbar from '../components/Navbar';
 import MenuRight from '../components/MenuRight';
 import CardProject from '../components/CardProject';
 
-import { ContainerProject, ContainerInfo, Projects, Container, ContainerTitle, ContainerFiltro,
-    Left, Right } from './styles';
+import { ContainerProject, ContainerInfo, Projects, Container, ContainerTitle,
+    ContainerFiltro, Center } from './styles';
 
 import { ContIcons } from '../components/MenuRight/styles';
 
@@ -20,30 +22,157 @@ const RegisterConsultants: React.FC = () => {
             <Container>
                 <ContainerProject>
                     <ContainerInfo>
-                        <ContainerTitle></ContainerTitle>
-                        <ContainerFiltro></ContainerFiltro>
+                        <ContainerTitle>
+                            <h1>Projetos alocados <IoMdArrowDropright size={25} /></h1>
+                            <p>grade</p>
+                        </ContainerTitle>
+                        <ContainerFiltro>
+                            <h1>Filtros:</h1>
+                            <div>
+                                <label>Seção:</label>
+                                <select name="secao">
+                                    <option value="se1">ABC</option>
+                                    <option value="se2">DEF</option>
+                                    <option value="se3">GHI</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label>Status:</label>
+                                <select name="status">
+                                    <option value="Atrasado">Atrasado</option>
+                                    <option value="Em andamento" selected>Em andamento</option>
+                                    <option value="Concluído">Concluído</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label>Projeto:</label>
+                                <input placeholder="Digite aqui" />
+                            </div>
+                        </ContainerFiltro>
                     </ContainerInfo>
                     <Projects>
-                        <Left>
+                        <Center>
                             <CardProject /> 
                             <CardProject />
-                            <CardProject />
-                            <CardProject />
+                        </Center>
+                        <Center>
                             <CardProject /> 
                             <CardProject />
-                            <CardProject />
-                            <CardProject />
-                        </Left>
-                        <Right>
+                        </Center>
+                        <Center>
                             <CardProject /> 
                             <CardProject />
-                            <CardProject />
-                            <CardProject />
+                        </Center>
+                        <Center>
                             <CardProject /> 
                             <CardProject />
+                        </Center>
+                        <Center>
+                            <CardProject /> 
                             <CardProject />
+                        </Center>
+                        <Center>
+                            <CardProject /> 
                             <CardProject />
-                        </Right>
+                        </Center>
+                        <Center>
+                            <CardProject /> 
+                            <CardProject />
+                        </Center>
+                        <Center>
+                            <CardProject /> 
+                            <CardProject />
+                        </Center>
+                        <Center>
+                            <CardProject /> 
+                            <CardProject />
+                        </Center>
+                        <Center>
+                            <CardProject /> 
+                            <CardProject />
+                        </Center>
+                        <Center>
+                            <CardProject /> 
+                            <CardProject />
+                        </Center>
+                        <Center>
+                            <CardProject /> 
+                            <CardProject />
+                        </Center>
+                        <Center>
+                            <CardProject /> 
+                            <CardProject />
+                        </Center>
+                        <Center>
+                            <CardProject /> 
+                            <CardProject />
+                        </Center>
+                        <Center>
+                            <CardProject /> 
+                            <CardProject />
+                        </Center>
+                        <Center>
+                            <CardProject /> 
+                            <CardProject />
+                        </Center>
+                        <Center>
+                            <CardProject /> 
+                            <CardProject />
+                        </Center>
+                        <Center>
+                            <CardProject /> 
+                            <CardProject />
+                        </Center>
+                        <Center>
+                            <CardProject /> 
+                            <CardProject />
+                        </Center>
+                        <Center>
+                            <CardProject /> 
+                            <CardProject />
+                        </Center>
+                        <Center>
+                            <CardProject /> 
+                            <CardProject />
+                        </Center>
+                        <Center>
+                            <CardProject /> 
+                            <CardProject />
+                        </Center>
+                        <Center>
+                            <CardProject /> 
+                            <CardProject />
+                        </Center>
+                        <Center>
+                            <CardProject /> 
+                            <CardProject />
+                        </Center>
+                        <Center>
+                            <CardProject /> 
+                            <CardProject />
+                        </Center>
+                        <Center>
+                            <CardProject /> 
+                            <CardProject />
+                        </Center>
+                        <Center>
+                            <CardProject /> 
+                            <CardProject />
+                        </Center>
+                        <Center>
+                            <CardProject /> 
+                            <CardProject />
+                        </Center>
+                        <Center>
+                            <CardProject /> 
+                            <CardProject />
+                        </Center>
+                        <Center>
+                            <CardProject /> 
+                            <CardProject />
+                        </Center>
+                        
+                                             
                     </Projects>
                 </ContainerProject>
             </Container>

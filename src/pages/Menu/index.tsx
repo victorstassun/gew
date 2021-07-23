@@ -16,7 +16,6 @@ import { ContainerHome, ContainerHomeGraph, Card, ContainerHomeCards, ContainerH
     CardContent, GraphContainer, GraphCont, GraphContNum, GraphBars, Bar, GraphData, Data } from './styles';
        
 const Menu: React.FC = () => {
-
     return (
         <>
         <Navbar />

@@ -13,7 +13,7 @@ const RegisterProjects: React.FC = () => {
             <Navbar />
             <MenuLeft />
             <MenuRight>
-                <ContIcons type={'RegisterProjects'} />
+                <ContIcons />
             </MenuRight>
         </>
     );

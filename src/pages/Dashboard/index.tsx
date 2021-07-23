@@ -14,7 +14,7 @@ const Dashboard: React.FC = () => {
             <Navbar />
             <MenuLeft />
             <MenuRight>
-                <ContIcons type={'Dashboard'}></ContIcons>
+                <ContIcons></ContIcons>
             </MenuRight>
 
         </>

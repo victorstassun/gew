@@ -14,7 +14,7 @@ const Projects: React.FC = () => {
             <Navbar />
             <MenuLeft />
             <MenuRight>
-                <ContIcons type={'RegisterConsultants'} />
+                <ContIcons />
             </MenuRight>
         </>
         );

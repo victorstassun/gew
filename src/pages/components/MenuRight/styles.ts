@@ -1,5 +1,4 @@
 import styled, { css } from "styled-components";
-import { animated } from 'react-spring';
 
 interface TypeRoute {
     type?: 'Dashboard' | 'EditProjects' | 'RegisterConsultants' | 'RegisterProjects' | 'Projects';
@@ -107,7 +106,7 @@ export const ContainerMenuRight = styled.div`
     position: fixed;
 `;
 
-export const ContIcons = styled(animated.div)<TypeRoute>`
+export const ContIcons = styled.div`
     width: 100%;
     height: 12.3vh;
     margin-bottom: 0.3vh;
@@ -137,14 +136,15 @@ export const ContIcons = styled(animated.div)<TypeRoute>`
         }
     }
 
-    
+`;
+
+/*
     ${props => styleTypes[props.type || 'Projects']}
     ${props => styleTypes[props.type || 'Dashboard']}
     ${props => styleTypes[props.type || 'EditProjects']}
     ${props => styleTypes[props.type || 'RegisterConsultants']}
     ${props => styleTypes[props.type || 'RegisterProjects']}
-
-`;
+*/
 
 export const Icon = styled.div`
     #icons {

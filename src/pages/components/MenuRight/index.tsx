@@ -35,8 +35,8 @@ const MenuRight: React.FC = () => {
                     <RiFileEditFill id="icons" color="#fff" />
                 </Icon>
                 <TextMenuRight>
-                    <a href="./">EDITAR</a>
-                    <a href="./">PROJETOS</a>
+                    <a href="../EditProjects">EDITAR</a>
+                    <a href="../EditProjects">PROJETOS</a>
                 </TextMenuRight>
             </ContIcons>
             <ContIcons>
@@ -53,8 +53,8 @@ const MenuRight: React.FC = () => {
                     <GiOrganigram id="icons" color="#fff" />
                 </Icon>
                 <TextMenuRight>
-                    <a href="./">ALOCAR</a>
-                    <a href="./">CONSULTORES</a>
+                    <a href="../RegisterConsultants">ALOCAR</a>
+                    <a href="../RegisterConsultants">CONSULTORES</a>
                 </TextMenuRight>
             </ContIcons>
             <ContIcons>

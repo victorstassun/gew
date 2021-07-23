@@ -6,7 +6,7 @@ Neste repositório está somente o front-end do projeto.
 - [x] Login
 - [x] Navbar
 - [ ] Home (Em andamento)
-- [ ] Projetos
+- [ ] Projetos (Em andamento)
 - [ ] Dashboard
 - [ ] Consultores
 - [ ] Editar
@@ -17,7 +17,7 @@ Neste repositório está somente o front-end do projeto.
 - [ ] Configurações
 - [ ] Perfil
 - [ ] Dropdowns (Em andamento)
-- [ ] Filtros projetos
+- [ ] Filtros projetos (Em andamento)
 - [ ] Filtros dashboard
 - [ ] Ícones, after, before, active, hover (Em andamento)
 - [ ] Pop-ups

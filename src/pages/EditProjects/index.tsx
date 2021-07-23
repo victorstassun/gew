@@ -13,7 +13,7 @@ const Projects: React.FC = () => {
             <Navbar />
             <MenuLeft />
             <MenuRight>
-                <ContIcons type={'EditProjects'}></ContIcons>
+                <ContIcons />
             </MenuRight>
         </>
         );

@@ -30,9 +30,4 @@ export default createGlobalStyle`
   a {
     text-decoration: none;
   }
-
-  ::-webkit-scrollbar {
-    display: none;
-  }
-
 `;

@@ -14,7 +14,7 @@ export const Card = styled.div`
 export const CardStatus = styled.div`
     width: 1vw;
     height: 100%;
-    background-color: red;
+    background-color: #00579D;
     border-radius: 5px 0px 0px 5px;
     display: flex;
     flex-direction: row;

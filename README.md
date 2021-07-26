@@ -20,7 +20,7 @@ Neste repositório está somente o front-end do projeto.
 - [ ] Filtros projetos (Em andamento)
 - [ ] Filtros dashboard
 - [ ] Ícones, after, before, active, hover (Em andamento)
-- [ ] Pop-ups
+- [ ] Pop-ups (Em andamento)
 
 ### Desenvolvedores
 <table>

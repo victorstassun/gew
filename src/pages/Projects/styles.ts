@@ -82,12 +82,11 @@ export const ContainerFiltro = styled.div`
     }
 
     div {
-
         display: flex;
         align-items: center;
         
         label {
-            font-size: 3vh;
+            font-size: 2.6vh;
             color: #00579D;
 
             margin-right: 0.5vw;
@@ -100,6 +99,7 @@ export const ContainerFiltro = styled.div`
             border-color: #ccc;
 
             color: #00579D;
+            border: 0.2vh solid #c4c4c4;
         }
 
         input {
@@ -126,7 +126,7 @@ export const ContainerFiltro = styled.div`
 export const Projects = styled.div`
     width: 100%;
     height: 80vh;
-
+    padding: 0px 20px;
     align-items: center;    
     
     overflow: scroll;
@@ -151,7 +151,8 @@ export const Center = styled.div`
     }
 
     display: flex;
-    place-content: flex-start space-around;
+    place-content: space-between;
+    flex: wrap;
     flex-direction: row;
     align-items: center;
 `;

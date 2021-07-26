@@ -41,7 +41,16 @@ export const ContainerHomeTitle = styled.div`
     }
 
     span {
-
+        width: 12vw;
+        height: 3vh;
+        margin-right: 1.5vw;
+        background-image: linear-gradient( to left, 
+            #64C3D5 15%, #fff 10%, #fff 18%,
+            #0091BD 19.3%, #0091BD 32%, #fff 30.6%, #fff 34.6%,
+            #005DA5 35.6%, #005DA5 49%, #fff 40%, #fff 53%,
+            #00579D 53%, #00579D 65.1%, #fff 65.1%, #fff 69.1%,
+            #0075B1 70%, #0075B1 83%, #fff 80%, #fff 88%,
+            #6AACDA 10%, #6AACDA 100%);
     }
 `;
 

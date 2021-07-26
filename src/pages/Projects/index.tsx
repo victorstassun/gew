@@ -24,7 +24,7 @@ const RegisterConsultants: React.FC = () => {
                     <ContainerInfo>
                         <ContainerTitle>
                             <h1>Projetos alocados <IoMdArrowDropright size={25} /></h1>
-                            <p>grade</p>
+                            <span />
                         </ContainerTitle>
                         <ContainerFiltro>
                             <h1>Filtros:</h1>

@@ -1,6 +1,8 @@
 import React from "react";
 
-import { Card, CardStatus, CardBox, BoxLeft, BoxRight } from './styles';
+import { AiOutlineClockCircle } from "react-icons/ai";
+
+import { Card, CardStatus, CardBox, BoxLeft, BoxRight, Progress, Value } from './styles';
 
 const CardProject: React.FC = () => {
     return (
@@ -27,8 +29,11 @@ const CardProject: React.FC = () => {
                             <p>Status: <strong>Atrasado</strong></p>
                         </div>
                         <div>
-                            <p><strong>Horas:</strong> 120 Horas</p>
-                            <p><strong>Apontadas:</strong> 60 Horas</p>
+                            <p><strong>Horas:</strong> <AiOutlineClockCircle size={15} /> 120 Horas</p>
+                            <p><strong>Apontadas:</strong> <AiOutlineClockCircle size={15} /> 60 Horas</p>
+                            <Progress>
+                                <Value />
+                            </Progress>
                         </div>
                     </BoxRight>
                 </CardBox>

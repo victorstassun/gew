@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Clock from "../../../assets/clock.svg"
 
 export const Card = styled.div`
     width: 36vw;
@@ -14,7 +15,7 @@ export const Card = styled.div`
 export const CardStatus = styled.div`
     width: 1vw;
     height: 100%;
-    background-color: #00579D;
+    background-color: red;
     border-radius: 5px 0px 0px 5px;
     display: flex;
     flex-direction: row;
@@ -25,6 +26,7 @@ export const CardBox = styled.div`
     height: 100%;
     display: flex;
     flex-direction: row;
+    padding: 0.5vh;
 
     border: 0.1vh solid rgb(0, 0, 0, 0.15);
     border-left: 0;
@@ -52,10 +54,11 @@ export const BoxLeft = styled.div`
 
         strong { 
             color: #222;
+            margin-right: 1vw;
         }
 
         p {
-            font-size: 2.2vh;
+            font-size: 2vh;
             padding: 2px;
             padding-left: 10px;
             text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.2);
@@ -106,14 +109,18 @@ export const BoxRight = styled.div`
         strong { 
             color: #000;
             font-weight: 500;
+            margin-right: 0.2vw;
         }
 
         p {
-            font-size: 2.2vh;
+            font-size: 2vh;
             padding: 2px;
             padding-left: 0.6vw;
             text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.2);
             color: #5B5B5B;
+
+            display: flex;
+            align-items: center;
         }
 
         h1 {
@@ -136,5 +143,36 @@ export const BoxRight = styled.div`
         &:last-child strong {
             font-weight: 500;
         }
+
+        &:last-child {
+            margin-bottom: 0.5vh;
+
+            svg {
+                color: #229FC6;
+                margin-right: 0.2vw;
+            }
+        }
     }
+`;
+
+export const Progress = styled.span`
+    width: 10vw;
+    height: 1.5vh;
+
+    background: #c4c4c4;
+    margin-top: 1vh;
+    margin-left: 0.655vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+`;
+
+export const Value = styled.div`
+    width: 7vw;
+    height: 1.5vh;
+
+        
+    display: flex;
+    background: #5CCE40;
 `;

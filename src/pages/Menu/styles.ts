@@ -1,7 +1,9 @@
 import styled from "styled-components";
-import Complete from '../../assets/complete.svg';
-import Up from '../../assets/up.svg';
-import Down from '../../assets/down.svg';
+import { shade } from "polished";
+
+import Complete from "../../assets/complete.svg";
+import Up from "../../assets/up.svg";
+import Down from "../../assets/down.svg";
 
 export const ContainerHome = styled.div`
     position: absolute;
@@ -299,7 +301,7 @@ export const Bar = styled.div`
     z-index: 10;
 
     &:hover {
-        background-color: #004b88;
+        background-color: ${shade(0.1, 'rgb(0, 79, 139)')}
     }
 `;
 

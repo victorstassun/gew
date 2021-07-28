@@ -19,7 +19,7 @@ const Login: React.FC = () => {
                             <label>SENHA</label>
                         </User>
                         <ContainerBtn>
-                            <a href="/mainmenu"><button>entrar</button></a>
+                            <button>entrar</button>
                             <a href="/mainmenu">Esqueceu sua senha?</a>
                         </ContainerBtn>
                     </ContainerInput>

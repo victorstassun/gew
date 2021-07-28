@@ -50,6 +50,7 @@ export const ContainerInput = styled.div`
     align-items: center;
     flex-direction: column;
     position: relative;
+    
 `;
 
 export const User = styled.div`

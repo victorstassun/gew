@@ -5,13 +5,14 @@ import { IoMdArrowDropright } from 'react-icons/io';
 import MenuLeft from '../components/MenuLeft';
 import Navbar from '../components/Navbar';
 import MenuRight from '../components/MenuRight';
-import CardProject from '../components/CardProject';
+
+import Card from '../components/CardProject/Card';
+import CardConcluded from '../components/CardProject/CardConcluded';
 
 import { ContainerProject, ContainerInfo, Projects, Container, ContainerTitle,
     ContainerFiltro, Center } from './styles';
 
 import { ContIcons } from '../components/MenuRight/styles';
-
 
 const RegisterConsultants: React.FC = () => {
     return (
@@ -52,127 +53,33 @@ const RegisterConsultants: React.FC = () => {
                     </ContainerInfo>
                     <Projects>
                         <Center>
-                            <CardProject /> 
-                            <CardProject />
+                            <Card status={"Atrasado"} /> 
+                            <Card status={"EmAndamento"} />
                         </Center>
                         <Center>
-                            <CardProject /> 
-                            <CardProject />
+                            <CardConcluded />  
+                            <Card status={"NaoIniciado"} />
                         </Center>
                         <Center>
-                            <CardProject /> 
-                            <CardProject />
+                            <Card status={"NaoIniciado"} /> 
+                            <Card status={"NaoIniciado"} />
                         </Center>
                         <Center>
-                            <CardProject /> 
-                            <CardProject />
+                            <Card status={"NaoIniciado"} /> 
+                            <Card status={"NaoIniciado"} />
                         </Center>
                         <Center>
-                            <CardProject /> 
-                            <CardProject />
+                            <Card status={"NaoIniciado"} /> 
+                            <Card status={"NaoIniciado"} />
+                        </Center> 
+                        <Center>
+                            <Card status={"NaoIniciado"} /> 
+                            <Card status={"NaoIniciado"} />
                         </Center>
                         <Center>
-                            <CardProject /> 
-                            <CardProject />
-                        </Center>
-                        <Center>
-                            <CardProject /> 
-                            <CardProject />
-                        </Center>
-                        <Center>
-                            <CardProject /> 
-                            <CardProject />
-                        </Center>
-                        <Center>
-                            <CardProject /> 
-                            <CardProject />
-                        </Center>
-                        <Center>
-                            <CardProject /> 
-                            <CardProject />
-                        </Center>
-                        <Center>
-                            <CardProject /> 
-                            <CardProject />
-                        </Center>
-                        <Center>
-                            <CardProject /> 
-                            <CardProject />
-                        </Center>
-                        <Center>
-                            <CardProject /> 
-                            <CardProject />
-                        </Center>
-                        <Center>
-                            <CardProject /> 
-                            <CardProject />
-                        </Center>
-                        <Center>
-                            <CardProject /> 
-                            <CardProject />
-                        </Center>
-                        <Center>
-                            <CardProject /> 
-                            <CardProject />
-                        </Center>
-                        <Center>
-                            <CardProject /> 
-                            <CardProject />
-                        </Center>
-                        <Center>
-                            <CardProject /> 
-                            <CardProject />
-                        </Center>
-                        <Center>
-                            <CardProject /> 
-                            <CardProject />
-                        </Center>
-                        <Center>
-                            <CardProject /> 
-                            <CardProject />
-                        </Center>
-                        <Center>
-                            <CardProject /> 
-                            <CardProject />
-                        </Center>
-                        <Center>
-                            <CardProject /> 
-                            <CardProject />
-                        </Center>
-                        <Center>
-                            <CardProject /> 
-                            <CardProject />
-                        </Center>
-                        <Center>
-                            <CardProject /> 
-                            <CardProject />
-                        </Center>
-                        <Center>
-                            <CardProject /> 
-                            <CardProject />
-                        </Center>
-                        <Center>
-                            <CardProject /> 
-                            <CardProject />
-                        </Center>
-                        <Center>
-                            <CardProject /> 
-                            <CardProject />
-                        </Center>
-                        <Center>
-                            <CardProject /> 
-                            <CardProject />
-                        </Center>
-                        <Center>
-                            <CardProject /> 
-                            <CardProject />
-                        </Center>
-                        <Center>
-                            <CardProject /> 
-                            <CardProject />
-                        </Center>
-                        
-                                             
+                            <Card status={"NaoIniciado"} /> 
+                            <Card status={"NaoIniciado"} />
+                        </Center>                           
                     </Projects>
                 </ContainerProject>
             </Container>

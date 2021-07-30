@@ -57,8 +57,29 @@ const RegisterConsultants: React.FC = () => {
                             <Card status={"EmAndamento"} />
                         </Center>
                         <Center>
-                            <CardConcluded /> 
-                        </Center>                            
+                            <CardConcluded />  
+                            <Card status={"NaoIniciado"} />
+                        </Center>
+                        <Center>
+                            <Card status={"NaoIniciado"} /> 
+                            <Card status={"NaoIniciado"} />
+                        </Center>
+                        <Center>
+                            <Card status={"NaoIniciado"} /> 
+                            <Card status={"NaoIniciado"} />
+                        </Center>
+                        <Center>
+                            <Card status={"NaoIniciado"} /> 
+                            <Card status={"NaoIniciado"} />
+                        </Center> 
+                        <Center>
+                            <Card status={"NaoIniciado"} /> 
+                            <Card status={"NaoIniciado"} />
+                        </Center>
+                        <Center>
+                            <Card status={"NaoIniciado"} /> 
+                            <Card status={"NaoIniciado"} />
+                        </Center>                           
                     </Projects>
                 </ContainerProject>
             </Container>

@@ -4,6 +4,18 @@ interface StatusProps {
     status: string;
 }
 
+const statusTypeVariations = {
+    Atrasado: css `
+        background-color: red;
+    `,
+    NaoIniciado: css `
+        background-color: grey;
+    `,
+    EmAndamento: css `
+        background-color: #00579D;
+    `
+}
+
 export const Card = styled.div`
     width: 36vw;
     height: 20vh;
@@ -23,9 +35,11 @@ export const CardStatus = styled.div<StatusProps>`
     display: flex;
     flex-direction: row;
 
-    ${props => props.status && css`background-color: red;`}
+    ${props => props.status === "Atrasado" && css`background-color: red;`}
 
-    ${props => props.status === "EmAndamento" && css`background-color: red`}
+    ${props => props.status === "NaoIniciado" && css`background-color: grey;`}
+
+    ${props => props.status === "EmAndamento" && css`background-color: #00579D`}
 `;
 
 export const CardBox = styled.div`

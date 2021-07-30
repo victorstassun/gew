@@ -8,10 +8,6 @@ interface CardStatus {
     status: string;
 }
 
-/*const handleStatus(status: string) {
-    
-}*/
-
 const CardProject: React.FC<CardStatus> = ({status}) => {
     console.log(status);
     return (

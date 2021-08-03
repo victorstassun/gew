@@ -44,6 +44,80 @@ export const ContainerBottom = styled.div`
     flex-direction: column;
 `;
 
+<<<<<<< HEAD
+=======
+export const ContainerInput = styled.div`
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    
+`;
+
+export const User = styled.div`
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+    label, input {
+        transition: all 0.2s;
+    }
+   
+    input {
+        width: 21vw;
+        height: 5vh;
+        background-color: transparent;
+        border: 0vh;
+        border-bottom: 0.4vh solid #afafaf;
+        border-radius: 0;
+        outline: 0;
+        font-size: 2vh;
+        font-weight: bold;
+        color: #333;
+        padding: 1vh;
+        z-index: 2;
+
+        &:focus + label, .searchformfld &:not(:placeholder-shown) + label {
+            transform: scale(0.9) translateY(-100%) translateX(-3vh); 
+        }
+
+        &:focus {
+            border-bottom: 0.4vh solid #00579D;
+            transition: border 0.5s;
+        }
+
+        &:active + label {
+            transform: scale(0.9) translateY(-100%) translateX(-3vh); 
+        }
+
+        &:valid + label {
+            transform: scale(0.9) translateY(-100%) translateX(-3vh); 
+        }
+
+        &:first-child {
+            margin-top: 6vh;
+            margin-bottom: -3vh;
+        }
+    }
+
+    label {
+        width: 0vh;
+        margin-top: -2vh;
+        margin-left: -40vh;
+        cursor: text;
+        font-size: 2.3vh;
+        padding: 1vh;
+        color: #00579D;
+        font-weight: bold;
+        z-index: 0;
+        text-shadow: 0.2vh 0.2vh 0.2vh rgba(0, 0, 0, 0.2);
+    }
+`;
+
+>>>>>>> ff354c35379b35c72352bc6f6529f31d3659e70b
 export const ContainerBtn = styled.div`
     width: 100%;
     height: 22vh;

@@ -4,6 +4,7 @@ interface StatusProps {
     status: string;
 }
 
+<<<<<<< HEAD
 const statusTypeVariations = {
     Atrasado: css `
         background-color: red;
@@ -16,6 +17,8 @@ const statusTypeVariations = {
     `
 }
 
+=======
+>>>>>>> ff354c35379b35c72352bc6f6529f31d3659e70b
 export const Card = styled.div`
     width: 36vw;
     height: 20vh;

@@ -50,6 +50,7 @@ const Login: React.FC = () => {
                 <Line />
                 <img src="https://www.weg.net/institutional/_ui/desktop/theme-institutional/img/brand.svg" alt="logo"/>
                 <ContainerBottom>
+<<<<<<< HEAD
                     
                         <Form ref={formRef} onSubmit={handleSubmit}>
                             <Input type="text" name="email" />
@@ -61,6 +62,22 @@ const Login: React.FC = () => {
                             </ContainerBtn>
                         </Form>
                   
+=======
+                    <ContainerInput>
+                        <User>
+                            <input type="text" placeholder="" required></input>
+                            <label>USUÁRIO</label>
+                        </User>
+                        <User>
+                            <input type="password" placeholder="" required></input>
+                            <label>SENHA</label>
+                        </User>
+                        <ContainerBtn>
+                            <button>entrar</button>
+                            <a href="/mainmenu">Esqueceu sua senha?</a>
+                        </ContainerBtn>
+                    </ContainerInput>
+>>>>>>> ff354c35379b35c72352bc6f6529f31d3659e70b
                 </ContainerBottom>
             </LoginCont>
         </Container>
